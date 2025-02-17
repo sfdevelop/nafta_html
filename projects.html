@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>NAFTA INVEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a class="header__link" href="#">Про NAFTA</a>
+                        </li>
+                        <li>
+                            <a class="header__link active" href="#">Проекти</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#">Реферальна програма</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__block social-link-block">
+                    <a class="social-link" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                            <path d="M19.7212 3.23476C19.6162 2.35901 18.7909 1.51924 17.9274 1.40674C12.663 0.752481 7.33776 0.752481 2.07332 1.40674C1.20909 1.519 0.383784 2.35901 0.278802 3.23476C-0.0929339 6.44434 -0.0929339 9.55636 0.278802 12.7652C0.383784 13.641 1.20909 14.4815 2.07332 14.5932C7.33776 15.2475 12.663 15.2475 17.9274 14.5932C18.7909 14.4817 19.6162 13.641 19.7212 12.7652C20.093 9.55666 20.093 6.44434 19.7212 3.23476ZM8.33321 11.3339V4.66706L13.3333 8.00062L8.33321 11.3339Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M9.00003 5.94333C7.31336 5.94333 5.94336 7.31333 5.94336 9C5.94336 10.6867 7.31336 12.06 9.00003 12.06C10.6867 12.06 12.06 10.6867 12.06 9C12.06 7.31333 10.6867 5.94333 9.00003 5.94333Z" fill="white"/>
+                            <path d="M13.6132 0.666656H4.3865C2.3365 0.666656 0.666504 2.33666 0.666504 4.38666V13.6133C0.666504 15.6667 2.3365 17.3333 4.3865 17.3333H13.6132C15.6665 17.3333 17.3332 15.6667 17.3332 13.6133V4.38666C17.3332 2.33666 15.6665 0.666656 13.6132 0.666656ZM8.99984 14.4C6.02317 14.4 3.59984 11.9767 3.59984 8.99999C3.59984 6.02332 6.02317 3.60332 8.99984 3.60332C11.9765 3.60332 14.3998 6.02332 14.3998 8.99999C14.3998 11.9767 11.9765 14.4 8.99984 14.4ZM14.5132 4.58332C13.8832 4.58332 13.3698 4.07332 13.3698 3.44332C13.3698 2.81332 13.8832 2.29999 14.5132 2.29999C15.1432 2.29999 15.6565 2.81332 15.6565 3.44332C15.6565 4.07332 15.1432 4.58332 14.5132 4.58332Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                            <path d="M7.84765 11.6508L7.51682 16.3042C7.99015 16.3042 8.19515 16.1008 8.44098 15.8567L10.6601 13.7358L15.2585 17.1033C16.1018 17.5733 16.696 17.3258 16.9235 16.3275L19.9418 2.18416L19.9426 2.18333C20.2101 0.936659 19.4918 0.449159 18.6701 0.754992L0.928481 7.54749C-0.282352 8.01749 -0.264018 8.69249 0.722648 8.99833L5.25848 10.4092L15.7943 3.81666C16.2901 3.48833 16.741 3.66999 16.3701 3.99833L7.84765 11.6508Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                        <path d="M1 1H19M7.75 7H19M1 13H19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                        <path d="M9.5999 3.35429L8.87476 2.62915L5.9999 5.50401L3.12505 2.62915L2.3999 3.35429L5.27476 6.22915L2.3999 9.10401L3.12505 9.82915L5.9999 6.95429L8.87476 9.82915L9.5999 9.10401L6.72504 6.22915L9.5999 3.35429Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero hero-center">
+            <div class="hero__image">
+                <img src="img/hero-2.webp" alt="">
+            </div>
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title" data-aos="zoom-in">Nafta <span data-aos="zoom-in-up">business & leisure</span></h1>
+                    <p class="hero__descr" data-aos="zoom-in-up">Adults only</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="textBlock section-bg">
+            <div class="container">
+                <div class="textBlock__inner" data-aos="zoom-out-up" data-aos-delay="0">
+                    <h2 class="textBlock__title">Lorem ipsum dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Rhoncus netus urna nisl dictum viverra. Molestie purus semper massa urna lorem nibh. In et donec turpis suspendisse aenean. Id in cursus elit pharetra tincidunt nunc vitae. Et ullamcorper sed eget morbi non pellentesque.</p>
+                    <p>Enim morbi libero sit turpis mattis. Amet velit sollicitudin facilisis lacinia nunc sagittis nunc. Urna tristique auctor pretium nulla commodo neque mauris. At ipsum maecenas eu donec convallis. Sagittis pretium ligula ipsum fusce eu sed eu egestas blandit. Fermentum laoreet justo at proin. Vitae magna adipiscing tempus pellentesque sed justo mattis risus egestas. Amet cursus pellentesque nunc pulvinar nunc auctor egestas.</p>
+                    <p>Velit risus commodo duis facilisi. Sit quisque interdum ac eu commodo in. Gravida commodo eu commodo quam enim nisl imperdiet enim. Vulputate amet nisl natoque egestas tincidunt. Pretium rhoncus pellentesque duis odio massa a. Sed morbi cursus donec amet faucibus pulvinar. Enim egestas faucibus consequat ultrices. Metus egestas fames vulputate dolor vel nec nulla. Condimentum pellentesque risus in duis laoreet. Sollicitudin facilisis arcu varius id pharetra convallis vulputate. Neque nulla nullam aliquet quisque tempor. Dignissim tincidunt commodo sit nascetur fermentum amet cras est enim. Pharetra urna porta vitae sit ultricies. Enim lectus eu elit non nibh.</p>
+                    <p>Consectetur commodo viverra pharetra malesuada egestas ultrices. Sed massa elementum egestas convallis ultricies et. Augue quisque orci in egestas amet ornare malesuada amet. Gravida aliquam ultrices tortor non pharetra viverra amet. Tristique urna arcu suscipit enim volutpat. Cursus arcu est nunc consequat tellus facilisi morbi volutpat. Volutpat nascetur pellentesque lacus elementum morbi posuere donec. Ultricies purus ac et pellentesque. Vitae sagittis sit lobortis faucibus pharetra.</p>
+                    <p>Tellus enim quis ut vulputate viverra. At amet rhoncus eu vel pharetra. Vel eu ipsum diam hendrerit venenatis facilisis sed nunc. Accumsan et consequat nunc sapien suspendisse cursus lectus ultrices neque. Quam faucibus id velit cras aliquet integer diam fermentum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages section-bg">
+            <div class="container">
+                <div class="advantages__inner">
+                    <div class="advantages__block">
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="0">
+                            <h3 class="advantages__item-title">SPA</h3>
+                            <p class="advantages__item-descr">ВЕЛИКИЙ ЦІЛОРІЧНИЙ БАСЕЙН, САУНИ ТА ЧАНИ НА ДРОВАХ </p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="20">
+                            <h3 class="advantages__item-title">BEAUTY</h3>
+                            <p class="advantages__item-descr">ТРЕНАЖЕРНА ЗАЛА, МАСАЖНІ КАБІНЕТИ ТА ІНФРАЧЕРВОНІ САУНИ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="40">
+                            <h3 class="advantages__item-title">ACTIVE</h3>
+                            <p class="advantages__item-descr">БІЛЬЯРД, ДАРТС, АЕРОХОКЕЙ, ПРОКАТ ТУРИСТИЧНОГО СПОРЯДЖЕННЯ, ЛАВКА КРАФТОВИХ РЕЧЕЙ ТА МЕРЧУ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="60">
+                            <h3 class="advantages__item-title">GASTRO</h3>
+                            <p class="advantages__item-descr">РЕСТОРАН ЗДОРОВОЇ ЛЮДИНИ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="80">
+                            <h3 class="advantages__item-title">BUSINESS</h3>
+                            <p class="advantages__item-descr">КОНФЕРЕНЦ-ЗАЛА НА 50 ОСІБ, МІТІНГ-РУМИ ТА ОФІСИ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="100">
+                            <h3 class="advantages__item-title">ROOFTOPBAR</h3>
+                            <p class="advantages__item-descr">ТЕРИТОРІЯ ІВЕНТІВ ТА ШОУ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="120">
+                            <h3 class="advantages__item-title">8 ПЕНТХАУСІВ</h3>
+                            <p class="advantages__item-descr">З ВЛАСНИМИ ТЕРАСАМИ, ЯКІ НЕ МАЮТЬ АНАЛОГІВ В РЕГІОНІ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="140">
+                            <h3 class="advantages__item-title">24 MOUNTIN</h3>
+                            <p class="advantages__item-descr">VIEW АПАРТАМЕНТИ З БАЛКОНАМИ</p>
+                        </div>
+                        <div class="advantages__item" data-aos="zoom-in" data-aos-delay="160">
+                            <h3 class="advantages__item-title">СТРУМОК</h3>
+                            <p class="advantages__item-descr">З ШОУ-ФОНТАНОМ ТА КАРПАТСЬКІ ЕНДЕМІКИ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <div class="product__inner">
+                    <div class="product__block">
+                        <div class="product__item" data-aos="zoom-in" data-aos-delay="0">
+                            <div class="product__item-top">
+                                <div class="product__item-image" data-aos="zoom-in" data-aos-delay="50">
+                                    <img src="img/product/image.webp" alt="">
+                                </div>
+                                <div class="product__item-content" data-aos="zoom-in" data-aos-delay="50">
+                                    <h3 class="product__item-title">ПЕНТХАУС З ТЕРАСОЮ</h3>
+                                    <ul class="product__item-list">
+                                        <li>185 000 у.о. інвестицій </li>
+                                        <li>68 м2 загальної площі та 50 м2 тераси  </li>
+                                        <li>18 500 у.о./рік гарантованого пасивного доходу  </li>
+                                        <li>25 % капіталізації за час будівництва</li>
+                                        <li>5 % щорічної капіталізації під час управління  </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-bottom" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-1.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-2.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-2.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-1.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-1.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-2.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product__item" data-aos="zoom-in" data-aos-delay="0">
+                            <div class="product__item-top">
+                                <div class="product__item-image" data-aos="zoom-in" data-aos-delay="50">
+                                    <img src="img/product/image2.webp" alt="">
+                                </div>
+                                <div class="product__item-content" data-aos="zoom-in" data-aos-delay="50">
+                                    <h3 class="product__item-title">MOUNTIN VIEW АПАРТАМЕНТ З БАЛКОНОМ</h3>
+                                    <ul class="product__item-list">
+                                        <li>85 000 у.о. інвестицій </li>
+                                        <li>34 м2 загальної площі та 5 м2 балкону </li>
+                                        <li>8 500 у.о./рік гарантованого пасивного доходу</li>
+                                        <li>25 % капіталізації за час будівництва</li>
+                                        <li>5 % щорічної капіталізації під час управління</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__item-bottom" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-1.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-2.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-2.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-1.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-1.webp" alt="">
+                                </div>
+                                <div class="product__item-scheme">
+                                    <img src="img/product/image-2.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-bg">
+            <div class="container">
+                <div class="about__inner" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="about__image" data-aos="zoom-in" data-aos-delay="20">
+                        <img src="img/about.webp" alt="">
+                    </div>
+                    <div class="about__content">
+                        <div class="about__top" data-aos="zoom-in-right" data-aos-delay="50">
+                            <h3 class="about__title">Максим Глухих</h3>
+                            <h6 class="about__descr">засновник та СЕО</h6>
+                            <div class="about__top-block">
+                                <h5 class="about__name">Nafta invest</h5>
+                                <h5 class="about__name">Nafta hotels</h5>
+                            </div>
+                        </div>     
+                        <div class="about__block">
+                            <div class="about__item" data-aos="zoom-in" data-aos-delay="0">
+                                <p class="about__item-name">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M19.3567 14.4C19.302 14.3567 15.3333 11.496 14.244 11.7013C13.724 11.7933 13.4267 12.148 12.83 12.858C12.734 12.9727 12.5033 13.2473 12.324 13.4427C11.9469 13.3197 11.5791 13.17 11.2233 12.9947C9.38701 12.1007 7.90333 10.617 7.00933 8.78067C6.83391 8.42495 6.68419 8.05712 6.56133 7.68C6.75733 7.5 7.032 7.26933 7.14933 7.17067C7.856 6.57733 8.21133 6.28 8.30333 5.75867C8.492 4.67867 5.63333 0.682667 5.60333 0.646667C5.47363 0.461381 5.30437 0.307242 5.10778 0.195402C4.9112 0.0835624 4.69221 0.0168188 4.46667 0C3.308 0 0 4.29133 0 5.014C0 5.056 0.0606667 9.32533 5.32533 14.6807C10.6753 19.9393 14.944 20 14.986 20C15.7093 20 20 16.692 20 15.5333C19.9834 15.3086 19.917 15.0903 19.8058 14.8943C19.6945 14.6983 19.5411 14.5295 19.3567 14.4Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Телефон
+                                </p>
+                                <a class="about__item-descr" href="tel:+380977790113">+38 (097) 779-01-13</a>
+                            </div>
+                            <div class="about__item" data-aos="zoom-in" data-aos-delay="50">
+                                <p class="about__item-name">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                            <path d="M11.6714 10.2538C11.1739 10.5855 10.5959 10.7609 10 10.7609C9.40414 10.7609 8.82617 10.5855 8.32859 10.2538L0.133164 4.79001C0.087922 4.75976 0.0435173 4.72828 0 4.6956L0 13.6486C0 14.6751 0.833008 15.4897 1.84113 15.4897H18.1588C19.1853 15.4897 20 14.6567 20 13.6486V4.69556C19.9564 4.72833 19.9119 4.75987 19.8665 4.79017L11.6714 10.2538Z" fill="white"/>
+                                            <path d="M0.783204 3.81487L8.97863 9.2787C9.28887 9.48554 9.64441 9.58894 9.99996 9.58894C10.3555 9.58894 10.7111 9.4855 11.0214 9.2787L19.2168 3.81487C19.7072 3.48812 20 2.94124 20 2.35101C20 1.33612 19.1743 0.510498 18.1595 0.510498H1.84051C0.825665 0.510537 9.68791e-07 1.33616 9.68791e-07 2.35198C-0.000303273 2.64152 0.0710559 2.92662 0.207714 3.18188C0.344372 3.43713 0.54208 3.6546 0.783204 3.81487Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Email
+                                </p>
+                                <a class="about__item-descr" href="mailto:Leobud2015@gmail.com">Leobud2015@gmail.com</a>
+                            </div>
+                            <div class="about__item" data-aos="zoom-in" data-aos-delay="100">
+                                <p class="about__item-name">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                                            <path d="M8.00008 0C4.00613 0 0.756836 3.2493 0.756836 7.2432C0.756836 12.1998 7.23883 19.4763 7.5148 19.7836C7.77402 20.0723 8.2266 20.0718 8.48535 19.7836C8.76133 19.4763 15.2433 12.1998 15.2433 7.2432C15.2432 3.2493 11.994 0 8.00008 0ZM8.00008 10.8875C5.99063 10.8875 4.35586 9.25266 4.35586 7.2432C4.35586 5.23375 5.99066 3.59898 8.00008 3.59898C10.0095 3.59898 11.6443 5.23379 11.6443 7.24324C11.6443 9.2527 10.0095 10.8875 8.00008 10.8875Z" fill="white"/>
+                                        </svg>
+                                    </span>
+                                    Адреса
+                                </p>
+                                <p class="about__item-descr">с. Східниця, вул. Чорновола, 47</p>
+                            </div>
+                        </div>
+                        <div class="about__socials social-link-block" data-aos="zoom-in-right" data-aos-delay="100">
+                            <a class="social-link" href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                    <path d="M10.8316 0.340332H7.1679C3.64155 0.340332 0.756348 3.22553 0.756348 6.75189V9.49969C0.756348 11.9727 2.19895 14.2397 4.42009 15.293V18.3614C4.42009 18.6362 4.76357 18.7735 4.94676 18.5675L7.60297 15.9112H10.8316C14.358 15.9112 17.2432 13.026 17.2432 9.49969V6.75189C17.2432 3.22553 14.358 0.340332 10.8316 0.340332ZM13.236 12.362L12.2971 13.2779C11.3125 14.2397 8.77079 13.1405 6.52675 10.8507C4.2827 8.56086 3.29807 5.99624 4.23691 5.03451L5.15284 4.11857C5.49632 3.77509 6.06878 3.79799 6.45805 4.14147L7.78616 5.51537C8.26702 5.99624 8.06094 6.82058 7.44268 7.00377C7.00761 7.14116 6.70993 7.62203 6.84732 8.0571C7.07631 9.06463 8.35862 10.3469 9.32035 10.5988C9.75542 10.6904 10.2363 10.4614 10.3966 10.0264C10.6027 9.4081 11.427 9.22491 11.885 9.70578L13.2131 11.0797C13.5795 11.4003 13.5795 11.9727 13.236 12.362ZM9.82412 4.69103C9.73252 4.69103 9.64093 4.69103 9.54934 4.71393C9.38905 4.73683 9.22876 4.59944 9.20586 4.43915C9.18296 4.27886 9.32035 4.11857 9.48064 4.09567C9.59513 4.07277 9.70962 4.07277 9.82412 4.07277C11.4957 4.07277 12.8696 5.44668 12.8696 7.11826C12.8696 7.23275 12.8696 7.34724 12.8467 7.46174C12.8238 7.62203 12.6635 7.75942 12.5032 7.73652C12.3429 7.71362 12.2056 7.55333 12.2284 7.39304C12.2284 7.30145 12.2513 7.20985 12.2513 7.11826C12.2742 5.79015 11.1751 4.69103 9.82412 4.69103ZM11.656 7.14116C11.656 7.30145 11.5186 7.43884 11.3583 7.43884C11.198 7.43884 11.0606 7.30145 11.0606 7.14116C11.0606 6.47711 10.5111 5.92754 9.84701 5.92754C9.68673 5.92754 9.54934 5.79015 9.54934 5.62986C9.54934 5.46957 9.68673 5.33218 9.84701 5.33218C10.8316 5.30929 11.656 6.13363 11.656 7.14116ZM13.9916 8.12579C13.9458 8.28608 13.7855 8.40057 13.6024 8.35477C13.4421 8.30898 13.3505 8.14869 13.3963 7.9884C13.465 7.71362 13.4879 7.43884 13.4879 7.14116C13.4879 5.1261 11.8392 3.47741 9.82412 3.47741H9.54934C9.38905 3.47741 9.22876 3.36292 9.22876 3.20263C9.22876 3.04234 9.34325 2.88206 9.50354 2.88206C9.61803 2.88206 9.73252 2.85916 9.82412 2.85916C12.1827 2.85916 14.1061 4.78262 14.1061 7.14116C14.1061 7.46174 14.0603 7.80521 13.9916 8.12579Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a class="social-link" href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <path d="M10.0025 0.333496H9.99787C4.9436 0.333496 0.833496 4.44475 0.833496 9.50016C0.833496 11.5054 1.47975 13.3639 2.5786 14.873L1.4362 18.2784L4.95964 17.152C6.40912 18.1122 8.13818 18.6668 10.0025 18.6668C15.0567 18.6668 19.1668 14.5544 19.1668 9.50016C19.1668 4.44589 15.0567 0.333496 10.0025 0.333496ZM15.3363 13.278C15.1152 13.9025 14.2375 14.4204 13.5373 14.5716C13.0584 14.6736 12.4328 14.755 10.3267 13.8818C7.63287 12.7658 5.89808 10.0284 5.76287 9.85079C5.63339 9.67318 4.67433 8.40131 4.67433 7.08589C4.67433 5.77048 5.34235 5.12995 5.61162 4.85495C5.83277 4.62923 6.19829 4.5261 6.54891 4.5261C6.66235 4.5261 6.76433 4.53183 6.856 4.53641C7.12527 4.54787 7.26047 4.56391 7.43808 4.98902C7.65922 5.52183 8.19777 6.83725 8.26193 6.97245C8.32725 7.10766 8.39256 7.291 8.30089 7.4686C8.21495 7.65193 8.13933 7.73329 8.00412 7.88912C7.86891 8.04495 7.74058 8.16412 7.60537 8.33141C7.48162 8.47693 7.34183 8.63277 7.49766 8.90204C7.6535 9.16558 8.19204 10.0444 8.98495 10.7503C10.0082 11.6612 10.8378 11.9522 11.1345 12.076C11.3557 12.1677 11.6192 12.1459 11.7808 11.974C11.9859 11.7529 12.2391 11.3862 12.4969 11.0253C12.6803 10.7663 12.9117 10.7342 13.1546 10.8259C13.4021 10.9118 14.7118 11.5592 14.9811 11.6933C15.2504 11.8285 15.428 11.8927 15.4933 12.0061C15.5575 12.1195 15.5575 12.6523 15.3363 13.278Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a class="social-link" href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+                                    <path d="M7.84765 11.151L7.51682 15.8043C7.99015 15.8043 8.19515 15.601 8.44098 15.3568L10.6601 13.236L15.2585 16.6035C16.1018 17.0735 16.696 16.826 16.9235 15.8277L19.9418 1.68434L19.9426 1.68351C20.2101 0.436842 19.4918 -0.0506582 18.6701 0.255175L0.928481 7.04767C-0.282352 7.51767 -0.264018 8.19267 0.722648 8.49851L5.25848 9.90934L15.7943 3.31684C16.2901 2.98851 16.741 3.17018 16.3701 3.49851L7.84765 11.151Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copy">© 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

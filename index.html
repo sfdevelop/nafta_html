@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>NAFTA INVEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a class="header__link active" href="#">Про NAFTA</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#">Проекти</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#">Реферальна програма</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__block social-link-block">
+                    <a class="social-link" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                            <path d="M19.7212 3.23476C19.6162 2.35901 18.7909 1.51924 17.9274 1.40674C12.663 0.752481 7.33776 0.752481 2.07332 1.40674C1.20909 1.519 0.383784 2.35901 0.278802 3.23476C-0.0929339 6.44434 -0.0929339 9.55636 0.278802 12.7652C0.383784 13.641 1.20909 14.4815 2.07332 14.5932C7.33776 15.2475 12.663 15.2475 17.9274 14.5932C18.7909 14.4817 19.6162 13.641 19.7212 12.7652C20.093 9.55666 20.093 6.44434 19.7212 3.23476ZM8.33321 11.3339V4.66706L13.3333 8.00062L8.33321 11.3339Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M9.00003 5.94333C7.31336 5.94333 5.94336 7.31333 5.94336 9C5.94336 10.6867 7.31336 12.06 9.00003 12.06C10.6867 12.06 12.06 10.6867 12.06 9C12.06 7.31333 10.6867 5.94333 9.00003 5.94333Z" fill="white"/>
+                            <path d="M13.6132 0.666656H4.3865C2.3365 0.666656 0.666504 2.33666 0.666504 4.38666V13.6133C0.666504 15.6667 2.3365 17.3333 4.3865 17.3333H13.6132C15.6665 17.3333 17.3332 15.6667 17.3332 13.6133V4.38666C17.3332 2.33666 15.6665 0.666656 13.6132 0.666656ZM8.99984 14.4C6.02317 14.4 3.59984 11.9767 3.59984 8.99999C3.59984 6.02332 6.02317 3.60332 8.99984 3.60332C11.9765 3.60332 14.3998 6.02332 14.3998 8.99999C14.3998 11.9767 11.9765 14.4 8.99984 14.4ZM14.5132 4.58332C13.8832 4.58332 13.3698 4.07332 13.3698 3.44332C13.3698 2.81332 13.8832 2.29999 14.5132 2.29999C15.1432 2.29999 15.6565 2.81332 15.6565 3.44332C15.6565 4.07332 15.1432 4.58332 14.5132 4.58332Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                            <path d="M7.84765 11.6508L7.51682 16.3042C7.99015 16.3042 8.19515 16.1008 8.44098 15.8567L10.6601 13.7358L15.2585 17.1033C16.1018 17.5733 16.696 17.3258 16.9235 16.3275L19.9418 2.18416L19.9426 2.18333C20.2101 0.936659 19.4918 0.449159 18.6701 0.754992L0.928481 7.54749C-0.282352 8.01749 -0.264018 8.69249 0.722648 8.99833L5.25848 10.4092L15.7943 3.81666C16.2901 3.48833 16.741 3.66999 16.3701 3.99833L7.84765 11.6508Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                        <path d="M1 1H19M7.75 7H19M1 13H19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                        <path d="M9.5999 3.35429L8.87476 2.62915L5.9999 5.50401L3.12505 2.62915L2.3999 3.35429L5.27476 6.22915L2.3999 9.10401L3.12505 9.82915L5.9999 6.95429L8.87476 9.82915L9.5999 9.10401L6.72504 6.22915L9.5999 3.35429Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__image">
+                <img src="img/hero.webp" alt="">
+            </div>
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title" data-aos="zoom-in">Готелі карпат <span data-aos="zoom-in-up">що працюють на тебе</span></h1>
+                    <p class="hero__descr" data-aos="zoom-in-up">Гарантований пасивний дохід  <br>від 365 000 до 16 000 000 гривень на рік</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="invest section-bg">
+            <div class="container">
+                <div class="invest__inner">
+                    <div class="invest__top section-top">
+                        <div class="section-top-left">
+                            <div class="section-top-logo" data-aos="zoom-in-right">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                            <h3 class="section-top-name" data-aos="zoom-in-right">Nafta invest</h3>
+                        </div>
+                        <h5 class="section-top-right" data-aos="zoom-in-left">2021 - 2024</h5>
+                    </div>
+                    <div class="invest__block">
+                        <div class="invest__item" data-aos="zoom-out-up" data-aos-delay="0">
+                            <p class="invest__item-descr"><span>65 000 000+</span>гривень <br>залучених</p>
+                            <h5 class="invest__item-name">Інвестицій</h5>
+                        </div>
+                        <div class="invest__item" data-aos="zoom-out-up" data-aos-delay="50">
+                            <p class="invest__item-descr"><span>25</span> апартаментів <br>та вілл</p>
+                            <h5 class="invest__item-name">Збудовано</h5>
+                        </div>
+                        <div class="invest__item" data-aos="zoom-out-up" data-aos-delay="100">
+                            <p class="invest__item-descr"><span>20</span> інвесторів отримують гарантований</p>
+                            <h5 class="invest__item-name">пасивний дохід</h5>
+                        </div>
+                        <div class="invest__item" data-aos="zoom-out-up" data-aos-delay="150">
+                            <p class="invest__item-descr"><span>3200 м2</span> нових <br>апартаментів та вілл</p>
+                            <h5 class="invest__item-name">будується</h5>
+                        </div>
+                    </div>
+                    <span class="section-bottom-name" data-aos="zoom-in" data-aos-delay="0"><img src="img/anv.svg" alt=""></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects__inner">
+                    <div class="projects__block">
+                        <div class="projects__item" data-aos="zoom-in" data-aos-delay="0">
+                            <div class="projects__item-image">
+                                <img src="img/projects/1.webp" alt="">
+                            </div>
+                            <h3 class="projects__item-name">Nafta business & leisure</h3>
+                            <p class="projects__item-descr">Комплекс з 5* інфрастуктурою</p>
+                            <p class="projects__item-start">Запуск : <strong>2-й квартал 2027 року</strong></p>
+                            <a class="projects__item-link btn" href="#">
+                                Детальніше
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M9 1V9M9 1H1M9 1L1 9" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="projects__item" data-aos="zoom-in" data-aos-delay="50">
+                            <div class="projects__item-image">
+                                <img src="img/projects/2.webp" alt="">
+                            </div>
+                            <h3 class="projects__item-name">NAFTA APARTS & MUSEUM</h3>
+                            <p class="projects__item-descr">Комплекс з  музеєм карпатської книги</p>
+                            <p class="projects__item-start">Запуск : <strong>2-й квартал 2025 року</strong></p>
+                            <a class="projects__item-link btn" href="#">
+                                Працює
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M9 1V9M9 1H1M9 1L1 9" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="projects__item" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="projects__item-image">
+                                <img src="img/projects/3.webp" alt="">
+                            </div>
+                            <h3 class="projects__item-name">Nafta villas</h3>
+                            <p class="projects__item-descr">Родинні вілли з власними саунами</p>
+                            <p class="projects__item-start">Запуск : <strong>1-й квартал 2023 року</strong></p>
+                            <a class="projects__item-link btn" href="#">
+                                Працює
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M9 1V9M9 1H1M9 1L1 9" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="projects__item" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="projects__item-image">
+                                <img src="img/projects/4.webp" alt="">
+                            </div>
+                            <h3 class="projects__item-name">Nafta pparts</h3>
+                            <p class="projects__item-descr">Автентичні апартамени з терасами</p>
+                            <p class="projects__item-start">Запуск : <strong>2-й квартал 2022 року</strong></p>
+                            <a class="projects__item-link btn" href="#">
+                                Працює
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M9 1V9M9 1H1M9 1L1 9" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="referals">
+            <div class="container">
+                <div class="referals__inner">
+                    <div class="referals__top section-top">
+                        <div class="section-top-left">
+                            <div class="section-top-logo" data-aos="zoom-in-right">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                            <h3 class="section-top-name" data-aos="zoom-in-right">Nafta invest</h3>
+                        </div>
+                        <h5 class="section-top-right" data-aos="zoom-in-left">реферальна програма</h5>
+                    </div>
+                    <div class="referals__content" data-aos="zoom-in" data-aos-delay="0">
+                        <p class="referals__descr">СТАНЬ ІНВЕСТОРОМ САМ ТА ПЕРЕКОНАЙ ДРУГА - <br>І КОЖЕН З ВАС ОТРИМАЄ ПО 1 % КЕШБЕКУ ВІД СУМИ ЙОГО ІНВЕСТИЦІЇ</p>
+                    </div>
+                    <span class="section-bottom-name" data-aos="zoom-in" data-aos-delay="0"><img src="img/anv.svg" alt=""></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <h2 class="contacts__title" data-aos="zoom-in-right">НАШІ контакти</h2>
+                    <div class="contacts__box">
+                        <div class="contacts__content">
+                            <div class="contacts__block">
+                                <div class="contacts__item" data-aos="zoom-in" data-aos-delay="0">
+                                    <p class="contacts__item-name">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M19.3567 14.4C19.302 14.3567 15.3333 11.496 14.244 11.7013C13.724 11.7933 13.4267 12.148 12.83 12.858C12.734 12.9727 12.5033 13.2473 12.324 13.4427C11.9469 13.3197 11.5791 13.17 11.2233 12.9947C9.38701 12.1007 7.90333 10.617 7.00933 8.78067C6.83391 8.42495 6.68419 8.05712 6.56133 7.68C6.75733 7.5 7.032 7.26933 7.14933 7.17067C7.856 6.57733 8.21133 6.28 8.30333 5.75867C8.492 4.67867 5.63333 0.682667 5.60333 0.646667C5.47363 0.461381 5.30437 0.307242 5.10778 0.195402C4.9112 0.0835624 4.69221 0.0168188 4.46667 0C3.308 0 0 4.29133 0 5.014C0 5.056 0.0606667 9.32533 5.32533 14.6807C10.6753 19.9393 14.944 20 14.986 20C15.7093 20 20 16.692 20 15.5333C19.9834 15.3086 19.917 15.0903 19.8058 14.8943C19.6945 14.6983 19.5411 14.5295 19.3567 14.4Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                        Телефон
+                                    </p>
+                                    <a class="contacts__item-descr" href="tel:+380977790113">+38 (097) 779-01-13</a>
+                                </div>
+                                <div class="contacts__item" data-aos="zoom-in" data-aos-delay="50">
+                                    <p class="contacts__item-name">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                                <path d="M11.6714 10.2538C11.1739 10.5855 10.5959 10.7609 10 10.7609C9.40414 10.7609 8.82617 10.5855 8.32859 10.2538L0.133164 4.79001C0.087922 4.75976 0.0435173 4.72828 0 4.6956L0 13.6486C0 14.6751 0.833008 15.4897 1.84113 15.4897H18.1588C19.1853 15.4897 20 14.6567 20 13.6486V4.69556C19.9564 4.72833 19.9119 4.75987 19.8665 4.79017L11.6714 10.2538Z" fill="white"/>
+                                                <path d="M0.783204 3.81487L8.97863 9.2787C9.28887 9.48554 9.64441 9.58894 9.99996 9.58894C10.3555 9.58894 10.7111 9.4855 11.0214 9.2787L19.2168 3.81487C19.7072 3.48812 20 2.94124 20 2.35101C20 1.33612 19.1743 0.510498 18.1595 0.510498H1.84051C0.825665 0.510537 9.68791e-07 1.33616 9.68791e-07 2.35198C-0.000303273 2.64152 0.0710559 2.92662 0.207714 3.18188C0.344372 3.43713 0.54208 3.6546 0.783204 3.81487Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                        Email
+                                    </p>
+                                    <a class="contacts__item-descr" href="mailto:Leobud2015@gmail.com">Leobud2015@gmail.com</a>
+                                </div>
+                                <div class="contacts__item" data-aos="zoom-in" data-aos-delay="100">
+                                    <p class="contacts__item-name">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                                                <path d="M8.00008 0C4.00613 0 0.756836 3.2493 0.756836 7.2432C0.756836 12.1998 7.23883 19.4763 7.5148 19.7836C7.77402 20.0723 8.2266 20.0718 8.48535 19.7836C8.76133 19.4763 15.2433 12.1998 15.2433 7.2432C15.2432 3.2493 11.994 0 8.00008 0ZM8.00008 10.8875C5.99063 10.8875 4.35586 9.25266 4.35586 7.2432C4.35586 5.23375 5.99066 3.59898 8.00008 3.59898C10.0095 3.59898 11.6443 5.23379 11.6443 7.24324C11.6443 9.2527 10.0095 10.8875 8.00008 10.8875Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                        Головний офіс
+                                    </p>
+                                    <p class="contacts__item-descr">с. Східниця <br>вул. Чорновола, 47</p>
+                                </div>
+                                <div class="contacts__item" data-aos="zoom-in" data-aos-delay="150">
+                                    <p class="contacts__item-name">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                                                <path d="M8.00008 0C4.00613 0 0.756836 3.2493 0.756836 7.2432C0.756836 12.1998 7.23883 19.4763 7.5148 19.7836C7.77402 20.0723 8.2266 20.0718 8.48535 19.7836C8.76133 19.4763 15.2433 12.1998 15.2433 7.2432C15.2432 3.2493 11.994 0 8.00008 0ZM8.00008 10.8875C5.99063 10.8875 4.35586 9.25266 4.35586 7.2432C4.35586 5.23375 5.99066 3.59898 8.00008 3.59898C10.0095 3.59898 11.6443 5.23379 11.6443 7.24324C11.6443 9.2527 10.0095 10.8875 8.00008 10.8875Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                        Юридична адреса
+                                    </p>
+                                    <p class="contacts__item-descr">с. Східниця <br>вул. Чорновола, 47</p>
+                                </div>
+                            </div>
+                            <div class="contacts__socials" data-aos="zoom-in-right">
+                                <h6 class="contacts__socials-name">Ми в  соцмережі</h6>
+                                <div class="contacts__socials-block social-link-block">
+                                    <a class="social-link" href="#" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                            <path d="M19.7212 3.23476C19.6162 2.35901 18.7909 1.51924 17.9274 1.40674C12.663 0.752481 7.33776 0.752481 2.07332 1.40674C1.20909 1.519 0.383784 2.35901 0.278802 3.23476C-0.0929339 6.44434 -0.0929339 9.55636 0.278802 12.7652C0.383784 13.641 1.20909 14.4815 2.07332 14.5932C7.33776 15.2475 12.663 15.2475 17.9274 14.5932C18.7909 14.4817 19.6162 13.641 19.7212 12.7652C20.093 9.55666 20.093 6.44434 19.7212 3.23476ZM8.33321 11.3339V4.66706L13.3333 8.00062L8.33321 11.3339Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                    <a class="social-link" href="#" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M9.00003 5.94333C7.31336 5.94333 5.94336 7.31333 5.94336 9C5.94336 10.6867 7.31336 12.06 9.00003 12.06C10.6867 12.06 12.06 10.6867 12.06 9C12.06 7.31333 10.6867 5.94333 9.00003 5.94333Z" fill="white"/>
+                                            <path d="M13.6132 0.666656H4.3865C2.3365 0.666656 0.666504 2.33666 0.666504 4.38666V13.6133C0.666504 15.6667 2.3365 17.3333 4.3865 17.3333H13.6132C15.6665 17.3333 17.3332 15.6667 17.3332 13.6133V4.38666C17.3332 2.33666 15.6665 0.666656 13.6132 0.666656ZM8.99984 14.4C6.02317 14.4 3.59984 11.9767 3.59984 8.99999C3.59984 6.02332 6.02317 3.60332 8.99984 3.60332C11.9765 3.60332 14.3998 6.02332 14.3998 8.99999C14.3998 11.9767 11.9765 14.4 8.99984 14.4ZM14.5132 4.58332C13.8832 4.58332 13.3698 4.07332 13.3698 3.44332C13.3698 2.81332 13.8832 2.29999 14.5132 2.29999C15.1432 2.29999 15.6565 2.81332 15.6565 3.44332C15.6565 4.07332 15.1432 4.58332 14.5132 4.58332Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                    <a class="social-link" href="#" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                            <path d="M7.84765 11.6508L7.51682 16.3042C7.99015 16.3042 8.19515 16.1008 8.44098 15.8567L10.6601 13.7358L15.2585 17.1033C16.1018 17.5733 16.696 17.3258 16.9235 16.3275L19.9418 2.18416L19.9426 2.18333C20.2101 0.936659 19.4918 0.449159 18.6701 0.754992L0.928481 7.54749C-0.282352 8.01749 -0.264018 8.69249 0.722648 8.99833L5.25848 10.4092L15.7943 3.81666C16.2901 3.48833 16.741 3.66999 16.3701 3.99833L7.84765 11.6508Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contacts__form" action="#" data-aos="zoom-in" data-aos-delay="100">
+                            <h4 class="contacts__form-title">Форма зв’зку</h4>
+                            <div class="contacts__form-content">
+                                <div class="contacts__form-block">
+                                    <div class="contacts__form-item">
+                                        <input type="text" placeholder="Вкажіть ваше ім’я" name="name" required>
+                                    </div>
+                                    <div class="contacts__form-item">
+                                        <input type="email" placeholder="Email" name="email" required>
+                                    </div>                                
+                                </div>
+                                <div class="contacts__form-item">
+                                    <textarea name="message" placeholder="Текст повідомлення"></textarea>
+                                    <p class="contacts__form-agree">Віправляючи повідомлення ви даєте згоду на обрбку ваших даних</p>
+                                </div>
+                            </div>
+                            <button class="contacts__form-btn btn" type="submit">
+                                Надіслати
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M9 1V9M9 1H1M9 1L1 9" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copy">© 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
