@@ -58,3 +58,43 @@ headerBurger.addEventListener("click", function () {
     headerMenu.classList.toggle("active");
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contacts__form");
+    const requiredFields = form.querySelectorAll(".required");
+    const emailField = form.querySelector("input[name='email']");
+
+    form.addEventListener("submit", function (event) {
+        let isValid = true;
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                field.classList.add("error");
+                field.nextElementSibling.style.display = "block";
+                isValid = false;
+            }
+        });
+
+        if (emailField) {
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(emailField.value.trim())) {
+                emailField.classList.add("error");
+                emailField.nextElementSibling.style.display = "block";
+                isValid = false;
+            }
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+        }
+    });
+
+    requiredFields.forEach(field => {
+        field.addEventListener("input", function () {
+            if (field.classList.contains("error")) {
+                field.classList.remove("error");
+                field.nextElementSibling.style.display = "none";
+            }
+        });
+    });
+});
